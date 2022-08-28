@@ -1,0 +1,132 @@
+
+php artisan serve
+php artisan websockets:serve
+php artisan key:generate
+
+websocket server packages
+composer require cboden/ratchet
+composer require ratchet/pawl
+
+
+
+
+php artisan websockets:serve --host=127.0.0.1 --port=6002
+php artisan websockets:serve --port=9001
+php artisan websockets:serve --port=6002
+php artisan websockets:serve --host=local.test --port=6001
+php artisan websockets:serve --host=127.0.0.1 --port=6001
+websockets
+https://beyondco.de/docs/laravel-websockets/basic-usage/starting
+https://laravel.su/docs/8.x/broadcasting
+https://github.com/acadea/course_laravel_api_server_livepost/blob/master/composer.json
+
+https://pusher.com/docs/channels/library_auth_reference/pusher-websockets-protocol/
+ws://ws-ap1.pusher.com:80/app/APP_KEY?client=js&version=7.0.3&protocol=5
+ws://localhost:6001/app/MYAPPKEY1?client=js&version=7.0.3&protocol=5
+https://github.com/beyondcode/laravel-websockets/issues/377
+
+
+composer create-project laravel/laravel:^8.0 example-app
+composer require beyondcode/laravel-websockets
+php artisan key:generate
+
+
+https://carmine.dev/posts/flutterwebsockets/
+
+nodejs ws server
+https://www.didierboelens.com/2018/06/web-sockets-build-a-real-time-game/
+
+
+
+https://www.youtube.com/watch?v=pIGy7-7gGXI
+
+http://127.0.0.1:8000/laravel-websockets
+connection blocked
+sudo ufw allow 6001
+
+php artisan tinker
+event(new App\Events\NewMessage("Hello World"))
+
+websocket test server
+https://www.piesocket.com/websocket-tester
+
+https://www.tutsmake.com/laravel-9-rest-api-with-passport-authentication-tutorial/
+PASSPOST
+Encryption keys already exist. Use the --force option to overwrite them.
+Personal access client created successfully.
+Client ID: 1
+Client secret: RVSE3KVRdkRQ24yrSQkpTJ8qRbyIW2VZqBEC3ncc
+Password grant client created successfully.
+Client ID: 2
+Client secret: dYogC88TelNDjTu2U2Jpxj2n8X9DUDTizRuQXwSa
+
+
+https://laracasts.com/discuss/channels/laravel/internal-usage-of-passport-for-own-api
+
+на русском установка паспорта
+https://laravel.ru/docs/v5/passport
+https://unetway.com/tutorial/laravel-passport
+
+
+https://laravel.com/docs/9.x/passport
+
+авторизированный запрос
+Content-Type:application/json
+Accept:application/json
+‘Authorization’ => ‘Bearer ‘.$accessToken,
+
+composer require fruitcake/laravel-cors
+
+php artisan make:migration create_dishes_table
+php artisan make:migration create_roles_table
+php artisan make:migration create_orders_table
+php artisan make:migration create_promotions_table
+php artisan make:migration create_geo_country_table
+php artisan make:migration create_geo_region_table
+php artisan make:migration create_geo_city_table
+php artisan make:migration create_settings_table
+php artisan make:migration create_tariffs_table
+php artisan make:migration create_client_basket_table
+php artisan make:migration create_favorites_table
+php artisan make:migration add_forgotten_password_fields
+php artisan make:migration add_user_phone_number
+php artisan make:migration create_linked_social_accounts_table
+php artisan make:migration add_delivery_option_into_orders
+
+
+php artisan make:controller DishesController --model=Dishes --resource --requests
+php artisan make:controller OrdersController --model=OrdersModel --resource
+
+php artisan make:controller ClientBasketController --model=ClientBasketModel --resource
+php artisan make:controller FavoritesController --model=FavoritesModel --resource
+
+
+
+php artisan make:controller PromotionsController --model=PromotionsModel --resource --api
+
+Route::apiResource('photos', PhotoController::class);
+события моделей
+https://laravel.com/docs/5.2/eloquent#events
+
+команда чтобы создать симлинк
+php artisan storage:link
+ссылка на иконки должна быть такой
+http://localhost:8000/storage/icons_category/empty.png
+APP_URL нужно прописать урл с портом
+
+
+php artisan passport:client --personal
+But if you did not run the command:
+если вот такая ошибка
+Personal access client not found. Please create one.
+то выполнить эту коменду. она создаст записи в таблицах
+php artisan passport:install
+You should run it first.
+
+websockets
+https://freek.dev/1228-introducing-laravel-websockets-an-easy-to-use-websocket-server-implemented-in-php#the-debug-dashboard
+
+******************************************
+зробити публічний доступ до сховища амазон
+https://bobbyhadz.com/blog/aws-s3-allow-public-read-access
+******************************************
